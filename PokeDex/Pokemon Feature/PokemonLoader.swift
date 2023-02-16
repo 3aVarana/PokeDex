@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol PokemonLoader {
+public protocol PokemonLoader {
     typealias Result = Swift.Result<[Pokemon], Error>
     
     func load(completion: @escaping (Result) -> Void)

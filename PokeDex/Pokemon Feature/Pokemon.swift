@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Pokemon {
+public class Pokemon {
     let name: String
     let url: String
     
