@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7EA1EBF8299EE06200269059 /* PokeDex.docc in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EBF7299EE06200269059 /* PokeDex.docc */; };
 		7EA1EBFE299EE06200269059 /* PokeDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA1EBF3299EE06200269059 /* PokeDex.framework */; };
 		7EA1EC03299EE06200269059 /* PokeDexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC02299EE06200269059 /* PokeDexTests.swift */; };
-		7EA1EC04299EE06200269059 /* PokeDex.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EA1EBF6299EE06200269059 /* PokeDex.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,8 +23,6 @@
 
 /* Begin PBXFileReference section */
 		7EA1EBF3299EE06200269059 /* PokeDex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PokeDex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EA1EBF6299EE06200269059 /* PokeDex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokeDex.h; sourceTree = "<group>"; };
-		7EA1EBF7299EE06200269059 /* PokeDex.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PokeDex.docc; sourceTree = "<group>"; };
 		7EA1EBFD299EE06200269059 /* PokeDexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeDexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA1EC02299EE06200269059 /* PokeDexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,8 +67,6 @@
 		7EA1EBF5299EE06200269059 /* PokeDex */ = {
 			isa = PBXGroup;
 			children = (
-				7EA1EBF6299EE06200269059 /* PokeDex.h */,
-				7EA1EBF7299EE06200269059 /* PokeDex.docc */,
 			);
 			path = PokeDex;
 			sourceTree = "<group>";
@@ -92,7 +86,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EA1EC04299EE06200269059 /* PokeDex.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +187,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EA1EBF8299EE06200269059 /* PokeDex.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
