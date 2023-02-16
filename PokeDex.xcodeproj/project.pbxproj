@@ -11,6 +11,7 @@
 		7EA1EC03299EE06200269059 /* PokeDexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC02299EE06200269059 /* PokeDexTests.swift */; };
 		7EA1EC1C299EE48B00269059 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC1B299EE48B00269059 /* Pokemon.swift */; };
 		7EA1EC1F299EE4C800269059 /* PokemonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC1E299EE4C800269059 /* PokemonLoader.swift */; };
+		7EA1EC22299EE56B00269059 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC21299EE56B00269059 /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		7EA1EC02299EE06200269059 /* PokeDexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexTests.swift; sourceTree = "<group>"; };
 		7EA1EC1B299EE48B00269059 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		7EA1EC1E299EE4C800269059 /* PokemonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonLoader.swift; sourceTree = "<group>"; };
+		7EA1EC21299EE56B00269059 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		7EA1EBF5299EE06200269059 /* PokeDex */ = {
 			isa = PBXGroup;
 			children = (
+				7EA1EC20299EE54B00269059 /* Pokemon API */,
 				7EA1EC1D299EE4B300269059 /* Pokemon Feature */,
 			);
 			path = PokeDex;
@@ -91,6 +94,14 @@
 				7EA1EC1E299EE4C800269059 /* PokemonLoader.swift */,
 			);
 			path = "Pokemon Feature";
+			sourceTree = "<group>";
+		};
+		7EA1EC20299EE54B00269059 /* Pokemon API */ = {
+			isa = PBXGroup;
+			children = (
+				7EA1EC21299EE56B00269059 /* HTTPClient.swift */,
+			);
+			path = "Pokemon API";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 			files = (
 				7EA1EC1F299EE4C800269059 /* PokemonLoader.swift in Sources */,
 				7EA1EC1C299EE48B00269059 /* Pokemon.swift in Sources */,
+				7EA1EC22299EE56B00269059 /* HTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
