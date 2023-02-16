@@ -13,6 +13,10 @@
 		7EA1EC22299EE56B00269059 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC21299EE56B00269059 /* HTTPClient.swift */; };
 		7EA1EC25299EE66100269059 /* LoadFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC24299EE66100269059 /* LoadFromRemoteUseCaseTests.swift */; };
 		7EA1EC2B299EEBE800269059 /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC2A299EEBE800269059 /* HTTPClientSpy.swift */; };
+		7EA1EC2D299EEEE300269059 /* PokemonItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC2C299EEEE300269059 /* PokemonItemsMapper.swift */; };
+		7EA1EC2F299EEF2400269059 /* RemotePokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC2E299EEF2400269059 /* RemotePokemon.swift */; };
+		7EA1EC32299EEFB900269059 /* HTTPClientResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC31299EEFB900269059 /* HTTPClientResponse+StatusCode.swift */; };
+		7EA1EC34299EF09400269059 /* RemotePokemonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC33299EF09400269059 /* RemotePokemonLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,10 @@
 		7EA1EC21299EE56B00269059 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		7EA1EC24299EE66100269059 /* LoadFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
 		7EA1EC2A299EEBE800269059 /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
+		7EA1EC2C299EEEE300269059 /* PokemonItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonItemsMapper.swift; sourceTree = "<group>"; };
+		7EA1EC2E299EEF2400269059 /* RemotePokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePokemon.swift; sourceTree = "<group>"; };
+		7EA1EC31299EEFB900269059 /* HTTPClientResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPClientResponse+StatusCode.swift"; sourceTree = "<group>"; };
+		7EA1EC33299EF09400269059 /* RemotePokemonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePokemonLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +109,11 @@
 		7EA1EC20299EE54B00269059 /* Pokemon API */ = {
 			isa = PBXGroup;
 			children = (
+				7EA1EC30299EEF9E00269059 /* Helpers */,
 				7EA1EC21299EE56B00269059 /* HTTPClient.swift */,
+				7EA1EC2C299EEEE300269059 /* PokemonItemsMapper.swift */,
+				7EA1EC2E299EEF2400269059 /* RemotePokemon.swift */,
+				7EA1EC33299EF09400269059 /* RemotePokemonLoader.swift */,
 			);
 			path = "Pokemon API";
 			sourceTree = "<group>";
@@ -119,6 +131,14 @@
 			isa = PBXGroup;
 			children = (
 				7EA1EC2A299EEBE800269059 /* HTTPClientSpy.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7EA1EC30299EEF9E00269059 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7EA1EC31299EEFB900269059 /* HTTPClientResponse+StatusCode.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -235,7 +255,11 @@
 			files = (
 				7EA1EC1F299EE4C800269059 /* PokemonLoader.swift in Sources */,
 				7EA1EC1C299EE48B00269059 /* Pokemon.swift in Sources */,
+				7EA1EC32299EEFB900269059 /* HTTPClientResponse+StatusCode.swift in Sources */,
 				7EA1EC22299EE56B00269059 /* HTTPClient.swift in Sources */,
+				7EA1EC2D299EEEE300269059 /* PokemonItemsMapper.swift in Sources */,
+				7EA1EC34299EF09400269059 /* RemotePokemonLoader.swift in Sources */,
+				7EA1EC2F299EEF2400269059 /* RemotePokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
