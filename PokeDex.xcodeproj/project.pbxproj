@@ -12,6 +12,7 @@
 		7EA1EC1F299EE4C800269059 /* PokemonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC1E299EE4C800269059 /* PokemonLoader.swift */; };
 		7EA1EC22299EE56B00269059 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC21299EE56B00269059 /* HTTPClient.swift */; };
 		7EA1EC25299EE66100269059 /* LoadFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC24299EE66100269059 /* LoadFromRemoteUseCaseTests.swift */; };
+		7EA1EC2B299EEBE800269059 /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC2A299EEBE800269059 /* HTTPClientSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		7EA1EC1E299EE4C800269059 /* PokemonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonLoader.swift; sourceTree = "<group>"; };
 		7EA1EC21299EE56B00269059 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		7EA1EC24299EE66100269059 /* LoadFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
+		7EA1EC2A299EEBE800269059 /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +109,18 @@
 		7EA1EC23299EE60700269059 /* Pokemon API */ = {
 			isa = PBXGroup;
 			children = (
+				7EA1EC29299EEBD700269059 /* Helpers */,
 				7EA1EC24299EE66100269059 /* LoadFromRemoteUseCaseTests.swift */,
 			);
 			path = "Pokemon API";
+			sourceTree = "<group>";
+		};
+		7EA1EC29299EEBD700269059 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7EA1EC2A299EEBE800269059 /* HTTPClientSpy.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EA1EC25299EE66100269059 /* LoadFromRemoteUseCaseTests.swift in Sources */,
+				7EA1EC2B299EEBE800269059 /* HTTPClientSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
