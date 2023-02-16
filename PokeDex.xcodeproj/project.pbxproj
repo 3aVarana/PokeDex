@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7EA1EBFE299EE06200269059 /* PokeDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA1EBF3299EE06200269059 /* PokeDex.framework */; };
 		7EA1EC03299EE06200269059 /* PokeDexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC02299EE06200269059 /* PokeDexTests.swift */; };
+		7EA1EC1C299EE48B00269059 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC1B299EE48B00269059 /* Pokemon.swift */; };
+		7EA1EC1F299EE4C800269059 /* PokemonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1EC1E299EE4C800269059 /* PokemonLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,8 @@
 		7EA1EBF3299EE06200269059 /* PokeDex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PokeDex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA1EBFD299EE06200269059 /* PokeDexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeDexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA1EC02299EE06200269059 /* PokeDexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexTests.swift; sourceTree = "<group>"; };
+		7EA1EC1B299EE48B00269059 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		7EA1EC1E299EE4C800269059 /* PokemonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 		7EA1EBF5299EE06200269059 /* PokeDex */ = {
 			isa = PBXGroup;
 			children = (
+				7EA1EC1D299EE4B300269059 /* Pokemon Feature */,
 			);
 			path = PokeDex;
 			sourceTree = "<group>";
@@ -77,6 +82,15 @@
 				7EA1EC02299EE06200269059 /* PokeDexTests.swift */,
 			);
 			path = PokeDexTests;
+			sourceTree = "<group>";
+		};
+		7EA1EC1D299EE4B300269059 /* Pokemon Feature */ = {
+			isa = PBXGroup;
+			children = (
+				7EA1EC1B299EE48B00269059 /* Pokemon.swift */,
+				7EA1EC1E299EE4C800269059 /* PokemonLoader.swift */,
+			);
+			path = "Pokemon Feature";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +154,7 @@
 				TargetAttributes = {
 					7EA1EBF2299EE06200269059 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					7EA1EBFC299EE06200269059 = {
 						CreatedOnToolsVersion = 14.2;
@@ -187,6 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EA1EC1F299EE4C800269059 /* PokemonLoader.swift in Sources */,
+				7EA1EC1C299EE48B00269059 /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +348,7 @@
 		7EA1EC08299EE06200269059 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -352,6 +370,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -359,6 +378,7 @@
 		7EA1EC09299EE06200269059 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -387,6 +407,7 @@
 		7EA1EC0B299EE06200269059 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2V3D2X879V;
@@ -402,6 +423,7 @@
 		7EA1EC0C299EE06200269059 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2V3D2X879V;
